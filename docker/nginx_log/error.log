@@ -1,0 +1,42 @@
+2022/03/03 04:06:33 [notice] 38#38: using the "epoll" event method
+2022/03/03 04:06:33 [notice] 38#38: nginx/1.21.6
+2022/03/03 04:06:33 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/03/03 04:06:33 [notice] 38#38: OS: Linux 5.10.76-linuxkit
+2022/03/03 04:06:33 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/03/03 04:06:33 [notice] 38#38: start worker processes
+2022/03/03 04:06:33 [notice] 38#38: start worker process 43
+2022/03/03 04:06:33 [notice] 38#38: start worker process 45
+2022/03/03 04:06:33 [notice] 38#38: start worker process 47
+2022/03/03 04:06:33 [notice] 38#38: start worker process 48
+2022/03/03 04:06:33 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2022/03/03 04:06:33 [emerg] 47#47: io_setup() failed (38: Function not implemented)
+2022/03/03 04:06:33 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2022/03/03 04:06:33 [emerg] 48#48: io_setup() failed (38: Function not implemented)
+2022/03/04 01:36:51 [notice] 38#38: using the "epoll" event method
+2022/03/04 01:36:51 [notice] 38#38: nginx/1.21.6
+2022/03/04 01:36:51 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/03/04 01:36:51 [notice] 38#38: OS: Linux 5.10.76-linuxkit
+2022/03/04 01:36:51 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/03/04 01:36:51 [notice] 38#38: start worker processes
+2022/03/04 01:36:51 [notice] 38#38: start worker process 43
+2022/03/04 01:36:51 [notice] 38#38: start worker process 45
+2022/03/04 01:36:51 [notice] 38#38: start worker process 46
+2022/03/04 01:36:51 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2022/03/04 01:36:51 [emerg] 45#45: io_setup() failed (38: Function not implemented)
+2022/03/04 01:36:51 [notice] 38#38: start worker process 49
+2022/03/04 01:36:51 [emerg] 49#49: io_setup() failed (38: Function not implemented)
+2022/03/04 01:36:51 [emerg] 46#46: io_setup() failed (38: Function not implemented)
+2022/03/08 01:27:39 [notice] 38#38: using the "epoll" event method
+2022/03/08 01:27:39 [notice] 38#38: nginx/1.21.6
+2022/03/08 01:27:39 [notice] 38#38: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/03/08 01:27:39 [notice] 38#38: OS: Linux 5.10.76-linuxkit
+2022/03/08 01:27:39 [notice] 38#38: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/03/08 01:27:39 [notice] 38#38: start worker processes
+2022/03/08 01:27:39 [notice] 38#38: start worker process 43
+2022/03/08 01:27:39 [notice] 38#38: start worker process 44
+2022/03/08 01:27:39 [notice] 38#38: start worker process 46
+2022/03/08 01:27:39 [notice] 38#38: start worker process 47
+2022/03/08 01:27:39 [emerg] 43#43: io_setup() failed (38: Function not implemented)
+2022/03/08 01:27:39 [emerg] 46#46: io_setup() failed (38: Function not implemented)
+2022/03/08 01:27:39 [emerg] 44#44: io_setup() failed (38: Function not implemented)
+2022/03/08 01:27:39 [emerg] 47#47: io_setup() failed (38: Function not implemented)

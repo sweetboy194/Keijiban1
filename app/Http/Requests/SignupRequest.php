@@ -24,7 +24,7 @@ class SignupRequest extends FormRequest
      */
     public function rules()
     {
-        
+
         return [
             'body'=>[
                 'required',
@@ -45,37 +45,28 @@ class SignupRequest extends FormRequest
                         if($findWord!==false){
                             return $fail("悪い言葉入っています。正しく入力してください！");
                         }
-
-                   
                     // foreach($checkWord as $word){
                     //     if(in_array($word,$badWord)){
-                
-                        
-                        
-                        
                             // return $fail("You can not type that because you have the bad word in the sentences");
                         }
                     }
-
-                    
-                
             ]
-            
+
         ];
     }
-            
-                    
+
+
             // },
 
 
-                
+
                 // foreach($badWord as $bad){
                 //     $searchWord=strpos($checkWord,$bad);
-        
-            
-       
-        
-        
+
+
+
+
+
     public function messages(){
         return [
             'body.required'=>'空白にしないでください',

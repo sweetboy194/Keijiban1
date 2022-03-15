@@ -31,10 +31,14 @@ Route::get('posts/cannot',function(){
 
 Auth::routes(['verify'=>true]);
 Route::get('/home','HomeController@index')->name('home')->middleware('auth');
-Route::get('posts/everyone','AdminController@everyone');
+Route::get('posts/everyone','AdminController@everyone')->name('everyone');
+Route::get('/contact','ContactController@view')->name('contact');
+Route::post('/contact/store','ContactController@store')->name('contact-store');
+Route::get('contact/complete','ContactController@completeView');
+Route::post('contact/action','ContactController@action')->name('contact-action');
 
 Route::middleware('auth','verified')->group(function(){
-    Route::get('posts/person','AdminController@person');
+    Route::get('posts/person','AdminController@person')->name('person');
     Route::get('posts/dashboard','AdminController@dashboard');
     Route::get('posts/error','AdminController@error');
     Route::get('posts/post_error','AdminController@posterror');
@@ -42,8 +46,8 @@ Route::middleware('auth','verified')->group(function(){
     Route::get('posts/edit/{id}','PostController@edit')->middleware('CheckUser');
     Route::post('posts/edit','PostController@update');
     Route::GET('posts/delete/{id}','PostController@destroy')->middleware('CheckUser');
-    
-    
+
+
 
 });
 

@@ -4,7 +4,7 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="{{ asset('logintest/images/icons/favicon.ico')}}"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/bootstrap/css/bootstrap.min.css')}}">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/animate/animate.css')}}">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/css-hamburgers/hamburgers.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/select2/select2.min.css')}}">
@@ -37,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                     @auth 
+                     @auth
                      <a href="/posts/create" class="btn btn-outline-primary">新規投稿</a>
                      @endauth
                     </ul>
@@ -53,7 +53,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('登録') }}</a>
                                 </li>
-                            @endif 
+                            @endif
                         @else
                             <li class="nav-item dropdown d-flex">
                                 <div class="pt-2">こんにちは!</div>
@@ -62,7 +62,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('home')}}">{{__('ホーム')}} </a>   
+                                <a class="dropdown-item" href="{{ route('home')}}">{{__('ホーム')}} </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -91,8 +91,8 @@
 						HOME
 					</span>
 			<div class="wrap-login100" style="margin-bottom:68px">
-				
-				<form class="login100-form validate-form">	
+
+				<form class="login100-form validate-form">
                     <span class="login100-form-title">
 						Welcome to Yu's Keijiban
 					</span>
@@ -103,18 +103,16 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    
                     </div>
                     <div class="container-login100-form-btn">
-                        <a href="http://127.0.0.1:8000/posts/person" class="login100-form-btn" style="background:#cd7807" >個人投稿</a>
+                        <a href="{{route('person')}}" class="login100-form-btn" style="background:#cd7807" >個人投稿</a>
 					</div><div class="container-login100-form-btn">
-                        <a href="http://127.0.0.1:8000/posts/everyone" class="login100-form-btn" style="background: #c5ba15" >全員投稿
+                        <a href="{{route('everyone')}}" class="login100-form-btn" style="background: #c5ba15" >全員投稿
                         </a>
 					</div>
-                    
 
-					
+
+
 				</form>
                 <div class="login100-pic js-tilt" data-tilt>
 					<img style="heigth:40px" class="rounded-circle" src="{{ asset('logintest/images/img-03.jpg')}}" alt="IMG">
@@ -123,10 +121,10 @@
 			</div>
 		</div>
 	</div>
-	
 
-	
-<!--===============================================================================================-->	
+
+
+<!--===============================================================================================-->
 	<script src="{{ asset('logintest/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->
 	<script src="{{ asset('logintest/vendor/bootstrap/js/popper.js')}}"></script>

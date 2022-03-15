@@ -26,12 +26,12 @@ class PostController extends Controller
         // $posts=Post::all();
         // $posts= DB::table('posts')->paginate(3);
         $id=Auth::id();
-        
+
         $posts=Post::orderby('id','desc')->paginate(5);
         return view('posts.index',['posts'=>$posts]);
     }
     // public function person(){
-        
+
     // }
     // public function everyone(){
     //     $id=Auth::id();
@@ -74,7 +74,7 @@ class PostController extends Controller
         Mail::to($user->email)->send(new SendMail($data));
         return redirect()->to('/posts/everyone');
         }
-        
+
     }
 
     /**
@@ -125,8 +125,8 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {   
-        
+    {
+
         $post= \App\Post::find($id);
         $post->delete();
         return redirect()->to('/posts/everyone');

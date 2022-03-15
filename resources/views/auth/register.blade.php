@@ -24,6 +24,7 @@
 
     <!-- Main CSS-->
     <link href="{{asset('registertest/css/main.css')}}" rel="stylesheet" media="all">
+
 </head>
 
 <body>

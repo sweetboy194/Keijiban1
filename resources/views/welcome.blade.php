@@ -4,7 +4,7 @@
 	<title>Yu 掲示板</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="{{ asset('logintest/images/icons/favicon.ico')}}"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/bootstrap/css/bootstrap.min.css')}}">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/animate/animate.css')}}">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/css-hamburgers/hamburgers.min.css')}}">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('logintest/vendor/select2/select2.min.css')}}">
@@ -34,7 +34,7 @@
 				</div>
 
 				<form class="login100-form validate-form">
-				@csrf	
+				@csrf
                     <span class="login100-form-title">
 						Welcome to Yu's Keijiban
 					</span>
@@ -45,7 +45,7 @@
 					</div>
                     @else
 					<div class="container-login100-form-btn">
-					<a href="{{ route('login') }}" class="login100-form-btn">ログイン</a>	
+					<a href="{{ route('login') }}" class="login100-form-btn">ログイン</a>
 					</div>
 					@if (Route::has('register'))
 					<div class="container-login100-form-btn">
@@ -55,19 +55,21 @@
                     @endauth
                     @endif
                     <div class="container-login100-form-btn">
-                        <a href="http://127.0.0.1:8000/posts/everyone" class="login100-form-btn" >投稿詳細</a>
+                        <a href="{{route('everyone')}}" class="login100-form-btn" >投稿詳細</a>
 					</div>
-                    
+                    <div class="container-login100-form-btn">
+                        <a href="{{route('contact')}}" style="background: #ff1e1e;" class="login100-form-btn">CONTACT US</a>
+					</div>
 
-					
+
 				</form>
 			</div>
 		</div>
 	</div>
-	
 
-	
-<!--===============================================================================================-->	
+
+
+<!--===============================================================================================-->
 	<script src="{{ asset('logintest/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
 <!--===============================================================================================-->
 	<script src="{{ asset('logintest/vendor/bootstrap/js/popper.js')}}"></script>
